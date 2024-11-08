@@ -29,7 +29,6 @@ class MyController(Controller, Node):
     msg.data = "psOFF"
     self.publisher_.publish(msg)
     self.get_logger().info("Published: " + msg.data)
-    
 
   def on_right_arrow_press(self):
     msg = MyString()
